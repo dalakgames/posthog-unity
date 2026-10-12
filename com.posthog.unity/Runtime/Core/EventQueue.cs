@@ -8,7 +8,7 @@ namespace PostHogUnity
     /// <summary>
     /// Manages the event queue with batching, persistence, and automatic flushing.
     /// </summary>
-    class EventQueue
+    partial class EventQueue
     {
         readonly PostHogConfig _config;
         readonly IStorageProvider _storage;

@@ -10,7 +10,7 @@ namespace PostHogUnity
     /// <summary>
     /// HTTP client for sending events to the PostHog API.
     /// </summary>
-    class NetworkClient
+    partial class NetworkClient
     {
         readonly PostHogConfig _config;
         readonly FeatureFlagsRequestFactory _featureFlagsRequestFactory;

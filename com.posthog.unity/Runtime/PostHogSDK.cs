@@ -1125,7 +1125,7 @@ namespace PostHogUnity
         {
             _sessionManager.OnBackground();
             _sessionReplayIntegration?.Pause();
-            _eventQueue.Flush();
+            _eventQueue.FlushOnBackground();
 
             // Synchronously flush pending file writes before backgrounding
             // to ensure data is persisted before the app may be suspended
